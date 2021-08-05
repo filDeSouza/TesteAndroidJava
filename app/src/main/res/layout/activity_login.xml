@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C4F6F5F5"
+    tools:context=".view.activity.LoginActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="172dp"
+        android:layout_height="59dp"
+        android:layout_marginStart="119dp"
+        android:layout_marginTop="110dp"
+        android:layout_marginEnd="120dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_solutis" />
+
+
+    <EditText
+        android:id="@+id/editTextUsuario"
+        android:layout_width="343dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="34dp"
+        android:background="@drawable/edit_text_border"
+        android:ems="10"
+        android:hint="   User"
+        android:inputType="textEmailAddress"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/editTextSenha"
+        android:layout_width="343dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="34dp"
+        android:background="@drawable/edit_text_border"
+        android:ems="10"
+        android:hint="   Password"
+        android:inputType="textPassword"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextUsuario" />
+
+    <Button
+        android:id="@+id/botaoLogin"
+        android:layout_width="167dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="122dp"
+        android:layout_marginTop="222dp"
+        android:layout_marginEnd="122dp"
+        android:layout_marginBottom="72dp"
+        android:background="@drawable/button_border"
+        android:backgroundTint="#2196F3"
+        android:text="Login"
+        android:textAllCaps="false"
+        android:textColor="#CDCCCC"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSenha"
+        app:strokeColor="#2196F3" />
+
+    <TextView
+        android:id="@+id/textViewMsgErro"
+        android:layout_width="183dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginBottom="6dp"
+        android:text="Usuário ou senha inválidos"
+        android:textColor="#ED0606"
+        app:layout_constraintBottom_toTopOf="@+id/editTextUsuario"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        android:visibility="gone"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

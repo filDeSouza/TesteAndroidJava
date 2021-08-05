@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">TesteAndroidJava</string>
+    <string name="api_key_title">token</string>
+    <string name="api_key_value">5EB63BBBE01EEED093CB22BB8F5ACDC3</string>
+</resources>

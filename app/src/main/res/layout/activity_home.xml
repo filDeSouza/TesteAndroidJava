@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_backgound"
+    tools:context=".view.activity.HomeActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewExtrato"
+        android:layout_width="404dp"
+        android:layout_height="453dp"
+        android:layout_marginTop="22dp"
+        android:background="#EFEDED"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewSaldo" />
+
+
+    <TextView
+        android:id="@+id/textViewNome"
+        android:layout_width="253dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="16dp"
+        android:gravity="bottom|center_vertical"
+        android:text="TextView"
+        android:textColor="#090909"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/imageButtonLogout"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewSaldo"
+        android:layout_width="222dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginEnd="155dp"
+        android:gravity="center_vertical"
+        android:text="TextView"
+        android:textColor="#050505"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTituloSaldo" />
+
+    <TextView
+        android:id="@+id/textViewTituloDocumento"
+        android:layout_width="168dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="209dp"
+        android:gravity="center_vertical"
+        android:text="CPF/CNPJ"
+        android:textColor="#040303"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNome" />
+
+    <TextView
+        android:id="@+id/textViewDocumento"
+        android:layout_width="222dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginEnd="155dp"
+        android:gravity="center_vertical"
+        android:text="TextView"
+        android:textColor="#040303"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTituloDocumento" />
+
+    <TextView
+        android:id="@+id/textViewTituloSaldo"
+        android:layout_width="168dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="209dp"
+        android:gravity="center_vertical"
+        android:text="Saldo"
+        android:textColor="#070707"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDocumento" />
+
+    <ImageButton
+        android:id="@+id/imageButtonLogout"
+        android:layout_width="31dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="33dp"
+        android:adjustViewBounds="true"
+        android:background="#00FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/icon_logout" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/recyclerViewExtrato" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="36dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="20dp"
+        android:gravity="bottom|left"
+        android:text="Olá,"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/textViewNome"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

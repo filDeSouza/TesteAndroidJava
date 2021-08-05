@@ -1,0 +1,77 @@
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="8dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginRight="14dp"
+    android:layout_marginBottom="8dp"
+    android:background="@drawable/card_view_border">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="380dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:background="@drawable/card_view_border">
+
+        <TextView
+            android:id="@+id/textItemTipo"
+            android:layout_width="146dp"
+            android:layout_height="53dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="43dp"
+            android:gravity="left|center_vertical"
+            android:scaleType="centerCrop"
+            android:text="Titulo"
+            android:textColor="#656262"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toStartOf="@+id/textItemData"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textItemData"
+            android:layout_width="134dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="11dp"
+            android:gravity="center_vertical"
+            android:scaleType="centerCrop"
+            android:text="Titulo"
+            android:textColor="#040303"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textItemDescricao"
+            android:layout_width="189dp"
+            android:layout_height="59dp"
+            android:layout_marginEnd="19dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_vertical"
+            android:scaleType="centerCrop"
+            android:text="Titulo"
+            android:textColor="#0B0A0A"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/textItemValor"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textItemValor"
+            android:layout_width="116dp"
+            android:layout_height="60dp"
+            android:layout_marginEnd="19dp"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_vertical"
+            android:scaleType="centerCrop"
+            android:text="Titulo"
+            android:textColor="#090909"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
